@@ -243,6 +243,49 @@ void DrawBar(int x, int y, const string& label, int value, int maxValue, int bar
 
 }
 
+void DrawTimingBar(int x, int y, const string& label, int value, int maxValue, int barWidth, int timingRange, int nearTimingRange, const string& fillChar, const string& emptyChar)
+{
+	int center = barWidth / 2;
+	int timingStart = center - timingRange;
+	int timingEnd = center + timingRange;
+	int nearTimingStart = timingStart - nearTimingRange;
+	int nearTimingEnd = timingEnd + nearTimingRange;
+
+	int cursorPos = barWidth * value / maxValue;
+
+	GoToXY(x, y);
+	SetColor();
+	cout << label;
+
+	for (int i = 0; i < barWidth; i++)
+	{
+		if (i == cursorPos)
+		{
+			SetColor();
+			cout << emptyChar;
+		}
+		else if (i >= timingStart && i <= timingEnd)
+		{
+			SetColor(Color::LIGHT_GREEN);
+			cout << fillChar;
+		}
+		else if (i >= nearTimingStart && i <= nearTimingEnd)
+		{
+			SetColor(Color::LIGHT_YELLOW);
+			cout << fillChar;
+		}
+		else
+		{
+			SetColor(Color::LIGHT_RED);
+			cout << fillChar;
+		}
+	}
+
+	SetColor();
+	int digits = std::to_string(maxValue).length();
+	cout << " " << std::setw(digits) << value << "/" << std::setw(digits) << maxValue;
+}
+
 void DrawLine(char ch, int width)
 {
 	cout << std::setfill(ch) << std::setw(width) << "" << std::setfill(' ');
