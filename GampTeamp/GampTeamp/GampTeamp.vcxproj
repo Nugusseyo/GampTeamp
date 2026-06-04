@@ -123,10 +123,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\GameProgramming\260427_gamep\260427_gamep\Console.cpp" />
+    <ClCompile Include="Console.cpp" />
+    <ClCompile Include="JYGMain.cpp" />
+    <ClCompile Include="MapGenerator.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\GameProgramming\260427_gamep\260427_gamep\Console.h" />
+    <ClInclude Include="Blocks.h" />
+    <ClInclude Include="Console.h" />
+    <ClInclude Include="MapGenerator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
