@@ -282,8 +282,6 @@ void DrawTimingBar(int x, int y, const string& label, int value, int maxValue, i
 	}
 
 	SetColor();
-	int digits = std::to_string(maxValue).length();
-	cout << " " << std::setw(digits) << value << "/" << std::setw(digits) << maxValue;
 }
 
 void DrawLine(char ch, int width)

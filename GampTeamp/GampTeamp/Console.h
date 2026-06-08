@@ -8,13 +8,11 @@
 #include <conio.h>
 #include <iomanip>
 #include <string>
+#include <vector>
+#include "GameState.h"
 #pragma comment(lib, "winmm.lib")
 
-using std::cout;
-using std::endl;
-using std::wcout;
-using std::string;
-using std::wstring;
+using namespace std;
 
 // 아스키 아트
 void SetUnicodeMode();
