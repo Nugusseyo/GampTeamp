@@ -21,10 +21,8 @@ struct Position
 struct Player
 {
 	Position pos = { 0, 0 };
-	int bombMax = 1;
-	int bombPower = 1;
 	bool isAlive = true;
-	int moveInterval = 100;
+	int moveInterval = 50;
 	ULONGLONG lastMoveTime = 0;
 	bool isTrans = false;
 	ULONGLONG lastDashTime = 0;
@@ -39,3 +37,5 @@ struct GameState
 	Player player;
 	ULONGLONG curTime;
 };
+
+extern GameState gameState;
