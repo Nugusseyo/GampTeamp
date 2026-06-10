@@ -39,6 +39,7 @@
     <ClCompile Include="Pickaxe.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Shop.cpp" />
     <ClCompile Include="TimingBar.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
