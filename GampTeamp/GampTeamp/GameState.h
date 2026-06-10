@@ -2,9 +2,9 @@
 #include "Enums.h"
 #include <Windows.h>
 #include <vector>
+#include "Blocks.h"
 
-constexpr int MAP_WIDTH = 21;
-constexpr int MAP_HEIGHT = 20;
+
 constexpr int WIDTH = 90;
 constexpr int HEIGHT = 50;
 
