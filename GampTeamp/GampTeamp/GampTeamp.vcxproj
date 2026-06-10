@@ -126,11 +126,13 @@
     <ClCompile Include="Console.cpp" />
     <ClCompile Include="JYGMain.cpp" />
     <ClCompile Include="MapGenerator.cpp" />
+    <ClCompile Include="Shop.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Blocks.h" />
     <ClInclude Include="Console.h" />
     <ClInclude Include="MapGenerator.h" />
+    <ClInclude Include="Shop.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
