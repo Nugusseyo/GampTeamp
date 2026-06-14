@@ -3,7 +3,7 @@
 string pickaxeName = "낡아빠진 곡괭이";
 Color pickaxeColor = Color::LIGHT_GRAY;
 
-void InitPickaxe(int x, int y)
+void RenderPickaxe(int x, int y)
 {
     SetUnicodeMode();
     SetColor(pickaxeColor);
@@ -30,7 +30,7 @@ void InitPickaxe(int x, int y)
     }
 }
 
-void RenderPickaxe()
+void RenderPickaxeName()
 {
     GoToXY(WIDTH - (int)pickaxeName.size(), HEIGHT - 1);
     SetColor(Color::WHITE);

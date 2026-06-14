@@ -4,5 +4,5 @@
 extern string pickaxeName;
 extern Color pickaxeColor;
 
-void InitPickaxe(int x, int y);
-void RenderPickaxe();
+void RenderPickaxe(int x, int y);
+void RenderPickaxeName();
