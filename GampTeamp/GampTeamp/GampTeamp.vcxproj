@@ -44,6 +44,9 @@
     <ClCompile Include="TimingBar.cpp" />
     <ClCompile Include="Transition.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Library Include="fmod_vc.lib" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
