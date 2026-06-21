@@ -20,12 +20,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Console.h" />
+    <ClInclude Include="Defines.h" />
     <ClInclude Include="Enums.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="MapGenerator.h" />
     <ClInclude Include="Pickaxe.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="SoundManager.h" />
     <ClInclude Include="TimingBar.h" />
     <ClInclude Include="Transition.h" />
   </ItemGroup>
@@ -41,6 +43,7 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="Shop.cpp" />
+    <ClCompile Include="SoundManager.cpp" />
     <ClCompile Include="TimingBar.cpp" />
     <ClCompile Include="Transition.cpp" />
   </ItemGroup>
@@ -131,13 +134,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>api/core/inc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Fmod\inc</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>fmod_vc.lib;user32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>api/core/lib/x64</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)Fmod\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -148,12 +151,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>api/core/inc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Fmod\inc</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>api/core/lib/x64</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)Fmod\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>fmod_vc.lib;user32.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
