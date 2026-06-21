@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -29,6 +29,7 @@
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SoundManager.h" />
     <ClInclude Include="TimingBar.h" />
+    <ClInclude Include="Title.h" />
     <ClInclude Include="Transition.h" />
   </ItemGroup>
   <ItemGroup>
@@ -45,6 +46,7 @@
     <ClCompile Include="Shop.cpp" />
     <ClCompile Include="SoundManager.cpp" />
     <ClCompile Include="TimingBar.cpp" />
+    <ClCompile Include="Title.cpp" />
     <ClCompile Include="Transition.cpp" />
   </ItemGroup>
   <ItemGroup>
