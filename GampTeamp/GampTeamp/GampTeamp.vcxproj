@@ -23,6 +23,7 @@
     <ClInclude Include="Defines.h" />
     <ClInclude Include="Enums.h" />
     <ClInclude Include="GameState.h" />
+    <ClInclude Include="Main.h" />
     <ClInclude Include="MapGenerator.h" />
     <ClInclude Include="Pickaxe.h" />
     <ClInclude Include="Player.h" />
