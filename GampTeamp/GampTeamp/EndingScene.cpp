@@ -34,9 +34,17 @@ void RenderEnding()
 	cout << btn2Text;
 
 	if (continueSelected)
-		GoToXY(WIDTH / 2 - btn1Text.length() / 2 - 3, HEIGHT - HEIGHT / 3);
-	else
+	{
 		GoToXY(WIDTH / 2 - btn2Text.length() / 2 - 3, HEIGHT - HEIGHT / 3 + 1);
+		cout << "  ";
+		GoToXY(WIDTH / 2 - btn1Text.length() / 2 - 3, HEIGHT - HEIGHT / 3);
+	}
+	else
+	{
+		GoToXY(WIDTH / 2 - btn2Text.length() / 2 - 3, HEIGHT - HEIGHT / 3);
+		cout << "  ";
+		GoToXY(WIDTH / 2 - btn1Text.length() / 2 - 3, HEIGHT - HEIGHT / 3 + 1);
+	}
 
 	cout << "¢º";
 }
