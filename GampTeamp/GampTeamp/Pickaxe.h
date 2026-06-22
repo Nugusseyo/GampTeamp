@@ -26,7 +26,19 @@ static vector<PickaxeData> pickaxeTable =
         }
     },
     {
-        "그냥 곡괭이", Color::WHITE,
+        "중국산 곡괭이", Color::WHITE,
+        {
+            L"⠀⠀⠀⠐⢆⡀⠀⠀⠀⠀⠀",
+            L"⠀⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀",
+            L"⠀⠀⠀⠀⠀⢀⡾⣷⢆⠀⠀",
+            L"⠀⠀⠀⠀⣠⣿⠏⠀⠀⠓⠄",
+            L"⠀⠀⢀⣴⡟⠁⠀⠀⠀⠀⠈",
+            L"⠀⣠⣿⠋⠀⠀⠀⠀⠀⠀⠀",
+            L"⠌⡽⠁⠀⠀⠀⠀⠀⠀⠀⠀",
+        }
+    },
+    {
+        "그냥 곡괭이", Color::GREEN,
         {
             L"⠀⠀⠀⠐⢆⡀⠀⠀⠀⠀⠀",
             L"⠀⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀",
@@ -76,7 +88,6 @@ static vector<PickaxeData> pickaxeTable =
 };
 
 void ClearPickaxe(int x, int y);
-void SetPickaxeLevel(int level);
 void RenderPickaxe(int x, int y);
 void RenderPickaxeName();
 void InitPickaxeCache();
